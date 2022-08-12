@@ -1,5 +1,7 @@
 from collections import Counter
 
+
+#Q1
 def remove_given_character(string,char):
     return string.replace(char,'') if char in string else f"{char} is not in the String"
 #print(remove_given_character(input('Enter your string: '),input('Enter character to replace: ')))
@@ -7,6 +9,7 @@ def remove_given_character(string,char):
 
 
 #----------------------------------------------------------------------------------------------------------
+#Q2
 def prime(a,b):
     primes=[]
     for i in range(a,b):
@@ -23,6 +26,7 @@ def prime(a,b):
 
 
 #-----------------------------------------------------------------------------------------------------------
+#Q3
 def repeated_char(string,char):
     return f"{char} is repeated {Counter(string)[char]} times" if char in string else f'{char} is not in String'
 #print(repeated_char(input('Enter your string: '),input('Enter character to check: ')))
